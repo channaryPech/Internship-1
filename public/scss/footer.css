@@ -1,0 +1,53 @@
+.footer {
+  width: 100%;
+}
+.footer .box {
+  background-color: #020235;
+  padding: 50px 0 70px 0;
+}
+.footer .box .logo {
+  align-items: center;
+  text-align: center;
+}
+.footer .box .logo :hover {
+  cursor: pointer;
+}
+.footer .box .icons {
+  align-items: center;
+  text-align: center;
+}
+.footer .box .icons a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.footer .box .icons .facebook:hover {
+  background-color: #4267B2;
+}
+.footer .box .icons .twitter:hover {
+  background-color: #1DA1F2;
+}
+.footer .box .icons .instagram:hover {
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+.footer .box .icons .youtube:hover {
+  background-color: #FF0000;
+}
+.footer .box .icons .tiktok:hover {
+  background-color: #000000;
+}
+.footer .licen {
+  background-color: #000000;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}/*# sourceMappingURL=footer.css.map */

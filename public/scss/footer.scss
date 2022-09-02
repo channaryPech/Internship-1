@@ -1,0 +1,53 @@
+.footer{
+    width: 100%;
+    .box{
+        background-color: #020235;
+        padding: 50px 0 70px 0;
+    .logo{
+        :hover{
+            cursor: pointer;
+        }
+        align-items: center;
+        text-align: center;
+    }
+    .icons{
+        align-items: center;
+        text-align: center;
+        a{
+            color: white;
+            text-align: center;
+            text-decoration: none; 
+            font-size: 20px;
+            display: inline-block;
+            background-color: rgba(255,255,255,.15);
+            border-radius: 50%;
+            padding: 3px;
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .facebook:hover{
+            background-color: #4267B2;
+        }
+        .twitter:hover{
+            background-color: #1DA1F2 ;
+        }
+        .instagram:hover{
+            background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+        }
+        .youtube:hover{
+            background-color: #FF0000;
+        }
+        .tiktok:hover{
+            background-color: #000000;
+        }
+    }
+}
+.licen{
+    background-color: #000000;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+}

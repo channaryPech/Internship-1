@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Battambang', cursive;
+}
+a{
+    text-decoration: none;
+}
+
+.nav_bar h1{
+    color: red;
+}
+
+.logo{
+    background-color: red;
+}

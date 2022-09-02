@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% "Battambang", cursive;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  top: 0;
+  transition: top 0.3s;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav_bar {
+  width: 100%;
+  height: 150px;
+  background-color: #020235;
+  display: flex;
+  justify-content: center;
+}
+.nav_bar .nav_bar_container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.nav_bar .nav_bar_container .icons a {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.nav_bar .nav_bar_container .icons .facebook:hover {
+  background-color: #4267B2;
+}
+.nav_bar .nav_bar_container .icons .twitter:hover {
+  background-color: #1DA1F2;
+}
+.nav_bar .nav_bar_container .icons .instagram:hover {
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+.nav_bar .nav_bar_container .icons .youtube:hover {
+  background-color: #FF0000;
+}
+.nav_bar .nav_bar_container .icons_active {
+  position: absolute;
+  bottom: 7px;
+}
+.nav_bar .nav_bar_container .logo {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav_bar .nav_bar_container .logo :hover {
+  cursor: pointer;
+}
+.nav_bar .nav_bar_container .logo_active {
+  width: 40px;
+  position: relative;
+}
+.nav_bar .nav_bar_container .logo_active img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: -50%;
+}
+
+.manu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.manu .manu_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  width: 90%;
+}
+.manu .manu_container .active {
+  margin-left: 65px;
+}
+.manu .manu_container .hamburger__btn {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.manu .manu_container .hamburger__btn a span {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  content: "";
+}
+.manu .manu_container .hamburger__btn span::before {
+  top: -8px;
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  content: "";
+}
+.manu .manu_container .hamburger__btn span::after {
+  bottom: -8px;
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  content: "";
+}
+.manu .manu_container ul {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+}
+.manu .manu_container ul a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 15px;
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+}
+.manu .manu_container .search__btn {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.manu:hover {
+  border-bottom: 1px solid gray;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+.content .grid_container {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  padding: 10px;
+}
+.content .grid_container .grid-item:hover {
+  opacity: 0.9;
+}
+.content .grid_container .grid-item {
+  padding: 20px;
+  font-size: 30px;
+  font-family: "Battambang", cursive;
+}
+.content .grid_container .grid-item a {
+  text-decoration: none;
+  text-align: center;
+}
+.content .grid_container .grid-item a .line {
+  width: 300px;
+  height: 45px;
+}
+.content .grid_container .grid-item a .line::after, .content .grid_container .grid-item a .line::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background-color: black;
+  width: 34%;
+  top: 30%;
+}
+.content .grid_container .grid-item a .line::after {
+  left: 0;
+}
+.content .grid_container .grid-item a .line::before {
+  right: 0;
+}
+.content .grid_container .grid-item a h6 {
+  color: white;
+  margin-bottom: 50px;
+  background-color: #770202;
+  font-size: 18px;
+  width: 110px;
+  border-color: transparent transparent transparent transparent;
+  border-style: solid;
+  border-width: 2px;
+  transform: skewX(-15deg);
+  margin-left: 120px;
+  margin-bottom: 20px;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .grid_container .grid-item a h6 {
+  margin-bottom: 20px;
+}
+.content .grid_container .grid-item a .type {
+  position: relative;
+  padding-bottom: 20px;
+}
+.content .grid_container .grid-item a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .grid_container .grid-item a div {
+  font-family: "Battambang", cursive in !important;
+  font-size: 13px;
+  color: gray;
+}
+.content .grid_container .grid-item a div .category {
+  font-weight: bold;
+}
+.content .grid_container .grid-item a p {
+  font-size: 20px;
+  color: #000000;
+  font-family: "Battambang", cursive in !important;
+  font-weight: 700;
+  line-height: 130%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.content .grid_container .grid-item a p .number {
+  margin-top: 10px;
+  font-size: 40px;
+  color: rgb(153, 153, 153);
+  padding-right: 20px;
+}
+.content .grid_container .grid-item .center_news_content {
+  position: relative;
+}
+.content .grid_container .grid-item .center_news_content img {
+  width: 500px;
+}
+.content .grid_container .grid-item .center_news_content .content_box {
+  position: absolute;
+  top: 10%;
+  background-color: black;
+  width: 500px;
+  height: auto;
+  color: white;
+  float: left;
+}
+.content .grid_container .grid-item .center_news_content .content_box div {
+  color: white;
+  padding-top: 100px;
+}
+.content .grid_container .grid-item .center_news_content .content_box p {
+  color: white;
+}
+.content .grid_container .grid-item .latest_news_content .line {
+  width: 300px;
+  height: 45px;
+}
+.content .grid_container .grid-item .latest_news_content .line::after, .content .grid_container .grid-item .latest_news_content .line::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background-color: black;
+  width: 34%;
+  top: 30%;
+}
+.content .grid_container .grid-item .latest_news_content .line::after {
+  left: 0;
+}
+.content .grid_container .grid-item .latest_news_content .line::before {
+  right: 0;
+}
+.content .grid_container .grid-item .latest_news_content h6 {
+  color: white;
+  margin-bottom: 50px;
+  background-color: #770202;
+  font-size: 18px;
+  width: 110px;
+  border-color: transparent transparent transparent transparent;
+  border-style: solid;
+  border-width: 2px;
+  transform: skewX(-15deg);
+  margin-left: 120px;
+  margin-bottom: 20px;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .grid_container .grid-item .latest_news_content h6 {
+  margin-bottom: 20px;
+}
+.content .grid_container .grid-item .latest_news_content .content_box {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.content .grid_container .grid-item .latest_news_content .content_box div:hover {
+  opacity: 0.9;
+}
+.content .grid_container .grid-item .latest_news_content .content_box img {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px 0 0 10px;
+}
+.content .grid_container .grid-item .latest_news_content .content_box img img:hover {
+  opacity: 1;
+}
+.content .grid_container .grid-item .latest_news_content .content_box p {
+  font-size: 15px;
+}
+
+.line {
+  width: 300px;
+  height: 45px;
+}
+
+.line::after, .line::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 1px;
+  background-color: black;
+  width: 34%;
+  top: 30%;
+}
+
+.line::after {
+  left: 0;
+}
+
+.line::before {
+  right: 0;
+}
+
+h6 {
+  color: white;
+  margin-bottom: 50px;
+  background-color: #770202;
+  font-size: 18px;
+  width: 90px;
+  border-color: transparent transparent transparent transparent;
+  border-style: solid;
+  border-width: 2px;
+  transform: skewX(-15deg);
+  margin-bottom: 20px;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+h6 {
+  margin-bottom: 20px;
+}
+
+.nation_sport, .more_news {
+  display: flex;
+  justify-content: center;
+}
+.nation_sport .item1, .more_news .item1 {
+  grid-area: main;
+}
+.nation_sport .item2, .more_news .item2 {
+  grid-area: right;
+}
+.nation_sport .item3, .more_news .item3 {
+  grid-area: footer;
+}
+.nation_sport .item4, .more_news .item4 {
+  grid-area: header;
+}
+.nation_sport .item5, .more_news .item5 {
+  grid-area: menu;
+}
+.nation_sport .item6, .more_news .item6 {
+  grid-area: header1;
+}
+.nation_sport .container, .more_news .container {
+  width: 90%;
+  display: grid;
+  grid-template-areas: "main main right right" "footer header menu header1";
+  gap: 10px;
+  padding: 10px;
+}
+.nation_sport .container .item1 a, .nation_sport .container .item2 a, .more_news .container .item1 a, .more_news .container .item2 a {
+  text-decoration: none;
+  position: relative;
+}
+.nation_sport .container .item1 a :hover, .nation_sport .container .item2 a :hover, .more_news .container .item1 a :hover, .more_news .container .item2 a :hover {
+  opacity: 0.99;
+}
+.nation_sport .container .item1 a .content_box, .nation_sport .container .item2 a .content_box, .more_news .container .item1 a .content_box, .more_news .container .item2 a .content_box {
+  font-family: "Battambang", cursive in !important;
+  font-size: 20px;
+  color: #ffffff;
+  position: relative;
+  font-weight: 800;
+  line-height: 110%;
+  line-break: auto;
+}
+.nation_sport .container .item1 a .content_box img, .nation_sport .container .item2 a .content_box img, .more_news .container .item1 a .content_box img, .more_news .container .item2 a .content_box img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nation_sport .container .item1 a .content_box .content, .nation_sport .container .item2 a .content_box .content, .more_news .container .item1 a .content_box .content, .more_news .container .item2 a .content_box .content {
+  display: grid;
+  grid-template-rows: auto auto;
+  position: absolute;
+  padding: 10px;
+  bottom: 5%;
+}
+.nation_sport .container .item1 a .content_box .content div, .nation_sport .container .item2 a .content_box .content div, .more_news .container .item1 a .content_box .content div, .more_news .container .item2 a .content_box .content div {
+  font-size: 15px;
+  color: #ffffff;
+}
+.nation_sport .container .item1 a .content_box .content div .category, .nation_sport .container .item2 a .content_box .content div .category, .more_news .container .item1 a .content_box .content div .category, .more_news .container .item2 a .content_box .content div .category {
+  font-weight: bold;
+}
+.nation_sport .container .item1 a .content_box .content div p, .nation_sport .container .item2 a .content_box .content div p, .more_news .container .item1 a .content_box .content div p, .more_news .container .item2 a .content_box .content div p {
+  color: #000000;
+}
+.nation_sport .line, .more_news .line {
+  width: 300px;
+  height: 45px;
+}
+.nation_sport .line::after, .nation_sport .line::before, .more_news .line::after, .more_news .line::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background-color: black;
+  width: 34%;
+  top: 30%;
+}
+
+.item3 a, .item4 a, .item5 a, .item6 a {
+  text-decoration: none;
+}
+.item3 a :hover, .item4 a :hover, .item5 a :hover, .item6 a :hover {
+  opacity: 0.99;
+}
+.item3 a .content_box, .item4 a .content_box, .item5 a .content_box, .item6 a .content_box {
+  font-family: "Battambang", cursive in !important;
+  font-size: 18px;
+  color: #070707;
+  font-weight: 800;
+  line-height: 110%;
+  line-break: auto;
+}
+.item3 a .content_box img, .item4 a .content_box img, .item5 a .content_box img, .item6 a .content_box img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.item3 a .content_box .content, .item4 a .content_box .content, .item5 a .content_box .content, .item6 a .content_box .content {
+  display: grid;
+  grid-template-rows: auto auto;
+  padding: 10px;
+  padding-top: 20px;
+}
+.item3 a .content_box .content div, .item4 a .content_box .content div, .item5 a .content_box .content div, .item6 a .content_box .content div {
+  font-size: 13px;
+  color: gray;
+}
+.item3 a .content_box .content div .category, .item4 a .content_box .content div .category, .item5 a .content_box .content div .category, .item6 a .content_box .content div .category {
+  font-weight: bold;
+}
+.item3 a .content_box .content div p, .item4 a .content_box .content div p, .item5 a .content_box .content div p, .item6 a .content_box .content div p {
+  color: #000000;
+}
+
+.internation_sport_content .internation_sport_container {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+}
+
+.more_news {
+  display: flex;
+  justify-content: center;
+}
+.more_news .more_news_container {
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
+  width: 95%;
+}
+.more_news .grid-item {
+  font-size: 20px;
+  text-align: center;
+}
+.more_news .grid-item .content_box img, .more_news .grid-item .content_box_left img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.more_news .grid-item .content_box .content, .more_news .grid-item .content_box_left .content {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.more_news .grid-item .content_box_left {
+  display: flex;
+  justify-content: space-between;
+}
+.more_news .grid-item .content_box_left img {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px 0 0 10px;
+  height: 50%;
+}
+.more_news .grid-item .content_box_left .content {
+  padding-left: 20px;
+}
+.more_news .grid-item .content_box_left .content p {
+  font-size: 15px;
+}/*# sourceMappingURL=app.css.map */
